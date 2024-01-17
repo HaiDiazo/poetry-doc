@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "poetry-test"
+version = "0.1.0"
+description = ""
+authors = ["Nathaniela Aptanta Parama <nathan@jkt1.ebdesk.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+loguru = "0.6.0"
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+[[tool.poetry.source]]
+name = "ebdesk"
+url = "http://192.168.20.127:6060/simple/"
+priority = "supplemental"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
