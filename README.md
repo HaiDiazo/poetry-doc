@@ -1,5 +1,6 @@
-## Tutorial Using Poetry
+## Tutorial Implementasi Poetry
 
+Poetry adalah tool untuk dependency management dan membuat package atau sebuah library dari project yang telah dibuat, termasuk untuk melakukan install atau update.
 Berikut adalah langkah untuk melakukan konfigurasi poetry
 
 - Langkah pertama, lakukan instalasi Poetry terlebih dahulu,
