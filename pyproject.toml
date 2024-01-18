@@ -13,11 +13,15 @@ loguru = "0.6.0"
 name = "PyPI"
 priority = "primary"
 
+
 [[tool.poetry.source]]
 name = "ebdesk"
-url = "http://192.168.20.127:6060/simple/"
-priority = "supplemental"
+url = "http://192.168.20.127:8080/simple/"
+priority = "primary"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+my-script = "poetry_test.main:start"

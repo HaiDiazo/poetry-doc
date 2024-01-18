@@ -1,5 +1,7 @@
 from loguru import logger
+from poetry_test.wrapper import PoetryTest
 
-
-if __name__ == "__main__": 
-    logger.info("testing")
+def start(): 
+    list_data = ["TELO"]
+    poetry_test = PoetryTest(datas=list_data)
+    poetry_test.run()
