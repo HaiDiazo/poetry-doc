@@ -45,5 +45,34 @@ Selain itu, untuk melakukan inisialisasi env seperti conda activate <nama_env> (
 poetry shell
 ```
 
+- Langkah selanjutnya adalah melakukan publish ke *pypi server*.
+dengan melakukan publish ke *pypi server* maka module atau package dapat digunakan di project lain. Script dibawah ini untuk menambahkan source ke server pypi
+
+```
+poetry source add <name_source> http://<ip_server>:8080/simple/
+```
+
+Kemudian memasukan config pada poetry
+
+```
+poetry config repositories.<name_source> http://<ip_server>:6060
+poetry config http-basic.<name_source> <username> <password>
+```
+
+Setelah itu, melakukan build script yang telah dibuat dengan script dibawah ini: 
+
+```
+poetry build
+```
+
+dan langkah terakhir, melakukan publish ke *pypi server* dengan script dibawah ini: 
+
+```
+poetry publish --build --repository <name_source>
+```
+
+kemudian check ke *http://<ip_server>:6060/simple/* apakah package telah terbuat.
+
+
 ### Reference: 
 - https://github.com/oktapiancaw/module-typica
