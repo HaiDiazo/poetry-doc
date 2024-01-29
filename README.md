@@ -1,6 +1,6 @@
 ## Tutorial Implementasi Poetry
 
-Poetry adalah tool untuk dependency management dan membuat package atau sebuah library dari project yang telah dibuat, termasuk untuk melakukan install atau update.
+Poetry adalah tool untuk dependency management dan membuat package atau sebuah library yang digunakan untuk menunjang kebutuhan project, serta termasuk tools untuk melakukan install atau update python package yang sering disebut sebagai Pypi. Dalam tutorial ini akan menggunakan Pypi server.
 Berikut adalah langkah untuk melakukan konfigurasi poetry
 
 - Langkah pertama, lakukan instalasi Poetry terlebih dahulu,
